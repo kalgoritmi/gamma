@@ -37,3 +37,7 @@
 
 # Media
 **/*.pdf
+data/**/*out.*
+
+# Coverage
+coverage_report/

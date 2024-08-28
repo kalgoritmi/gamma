@@ -46,7 +46,7 @@ WORKDIR /usr/data
 COPY --from=build /tmp/coverage_report /tmp/coverage_report
 
 # sample image credit link:
-# https://unsplash.com/photos/a-view-of-a-mountain-range-with-a-lake-in-the-foreground-rSsQ4qXg41I?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+# https://unsplash.com/photos/an-aerial-view-of-a-mountain-and-a-body-of-water-aHQtYTNih_Q?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
 # ADD https://unsplash.com/photos/aHQtYTNih_Q/download?ixid=M3wxMjA3fDB8MXxhbGx8NDV8fHx8fHwyfHwxNzI0NjE4MTMzfA&force=true&w=1920 /usr/data/aerial-view.jpg
 
 COPY --from=build /usr/src/gamma/build/src/gamma /usr/local/bin/gamma
