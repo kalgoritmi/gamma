@@ -19,8 +19,6 @@ docker-build:
 	@echo "\n  *** Built docker container ${IMAGE} ***\n"
 
 get-coverage:
-	@[ -z $( docker image ls --format '{{.Repository}}' --filter=reference=${IMAGE}) ] || \
- 		(echo "No image \`${IMAGE}\` present, run targets docker-build or docker-run first"; exit 1)
 	docker ps -a --format '{{.Names}}' --filter "name=${CONTAINER}" | xargs docker rm
 	docker create --name ${CONTAINER} ${IMAGE}
 	rm -rf ${CURDIR}/coverage_report 2>&1
