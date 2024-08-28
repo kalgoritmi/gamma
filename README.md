@@ -66,13 +66,13 @@ the following installed on your OS (supporting docker engine):
 
   you can then view the output image in the `./data` folder, as the volume is persisted even though the container gets auto-removed due to `--rm`.
 
-  - To run open coverage report, run:
+- To run open coverage report, run:
 
   ```shell
   make open-coverage -f docker.Makefile
   ```
   
-     Note: This requires that image gamma has been already built once, to do this run any of the targets docker-build docker-run docker-run-bash
+  Note: This requires that image gamma has been already built once, to do this run any of the targets docker-build docker-run docker-run-bash
 
 ### Attribution
 Image sample attribution:
