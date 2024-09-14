@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(WARNING_FLAGS -Wall -Wextra)
 set(COVERAGE_FLAGS -fprofile-arcs -ftest-coverage)
-set(OPTIMIZATION_FLAGS -O3)
+set(OPTIMIZATION_FLAGS -O3 -mavx2 -fPIC)
 
 enable_testing()
 
